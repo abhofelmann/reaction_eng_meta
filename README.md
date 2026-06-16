@@ -9,6 +9,7 @@ reaction_eng_meta
 ```
 **code**: contains MATLAB scripts used to fit 1D pseudo-homogeneous model and predict temperature profiles 
 - `Correct_sweep_MaxT.mlx`: MATLAB live script to rank reactor configurations by defined FOM, then re-run top 30 structures to maintin max temperature, and re-rank.
+- `Cr_infty_wradial_combine_runs.mxl`: MATLABl live script used to combine and rank the predicted temperature profiles, conversion, and power data generated using `Temp_Crinf_wRadial.m`. Files called by this program can be found in `data/model_predict_Crinfty`. 
 - `Predict_Temp.m`: MATLAB script containing 1D pseudo-homogeneous model which predicts temperature profile for given flow, max. temperature, and reactor configuraiton
 - `Running_TestPoints.mlx`: MATLAB live script which verifies model training by predicting temeprature profile of given test points
 - `Temp_Crinf_wRadial.m`: MATLAB script which constains modified version of `Predict_Temp.m` for predicting the temperature profile of reactor configurations with infinite AC resistance ratios, accounting for radial loss
